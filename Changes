@@ -1,0 +1,8 @@
+POE::Component::Client::SOCKS
+=============================
+
+0.02	Sun Dec 17 15:53:06 GMT 2006
+	- Dst IP wasn't been packed properly in the SuccessEvent;
+
+0.01	Sun Dec 17 15:44:43 GMT 2006
+	- Initial CPAN release

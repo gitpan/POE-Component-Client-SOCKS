@@ -7,7 +7,7 @@ use POE qw(Wheel::SocketFactory Filter::Stream Wheel::ReadWrite);
 use Data::Dumper;
 use vars qw($VERSION);
 
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 sub spawn {
   my $package = shift;
@@ -258,7 +258,7 @@ sub _conn_input {
      $kernel->refcount_decrement( $sender_id, __PACKAGE__ );
      return;
   }
-  $args->{socks_response} = [ $cd, $dstip, $dstport ];
+  $args->{socks_response} = [ $cd, inet_ntoa( pack "N", $dstip ), $dstport ];
   $kernel->post( $sender_id, $args->{successevent}, $args );
   $kernel->refcount_decrement( $sender_id, __PACKAGE__ );
   return;
