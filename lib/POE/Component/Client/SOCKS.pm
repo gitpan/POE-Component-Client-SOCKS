@@ -7,7 +7,7 @@ use POE qw(Wheel::SocketFactory Filter::Stream Wheel::ReadWrite);
 use Data::Dumper;
 use vars qw($VERSION);
 
-$VERSION = '0.02';
+$VERSION = '0.03';
 
 sub spawn {
   my $package = shift;
