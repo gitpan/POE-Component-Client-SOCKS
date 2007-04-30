@@ -4,10 +4,9 @@ use strict;
 use Carp;
 use Socket;
 use POE qw(Wheel::SocketFactory Filter::Stream Wheel::ReadWrite);
-use Data::Dumper;
 use vars qw($VERSION);
 
-$VERSION = '0.03';
+$VERSION = '0.04';
 
 sub spawn {
   my $package = shift;
@@ -165,7 +164,6 @@ sub _command {
 	warn "You specified 'bind' but 'RemoteAddress' is not an IP address\n";
         return;
      }
-     warn Dumper( $args );
      $kernel->refcount_increment( $args->{sender_id}, __PACKAGE__ );
   }
   if ( $state eq 'connect' ) {
