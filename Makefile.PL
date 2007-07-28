@@ -2,6 +2,8 @@ use inc::Module::Install;
 name 'POE-Component-Client-SOCKS';
 author 'Chris Williams <chris@bingosnet.co.uk>';
 version_from 'lib/POE/Component/Client/SOCKS.pm';
+abstract_from 'lib/POE/Component/Client/SOCKS.pm';
+build_requires 'Test::More' => 0.47;
 license 'perl';
 requires 'Carp' => 0;
 requires 'Socket' => 0;
