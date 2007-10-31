@@ -6,7 +6,7 @@ use Socket;
 use POE qw(Wheel::SocketFactory Filter::Stream Wheel::ReadWrite);
 use vars qw($VERSION);
 
-$VERSION = '0.05';
+$VERSION = '0.06';
 
 sub spawn {
   my $package = shift;
