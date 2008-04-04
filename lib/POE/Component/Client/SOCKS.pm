@@ -1,12 +1,13 @@
 package POE::Component::Client::SOCKS;
 
 use strict;
+use warnings;
 use Carp;
 use Socket;
 use POE qw(Wheel::SocketFactory Filter::Stream Wheel::ReadWrite);
 use vars qw($VERSION);
 
-$VERSION = '0.06';
+$VERSION = '0.08';
 
 sub spawn {
   my $package = shift;

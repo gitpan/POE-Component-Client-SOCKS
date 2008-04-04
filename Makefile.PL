@@ -1,3 +1,4 @@
+use strict;
 use inc::Module::Install;
 name 'POE-Component-Client-SOCKS';
 author 'Chris Williams <chris@bingosnet.co.uk>';
@@ -5,7 +6,11 @@ version_from 'lib/POE/Component/Client/SOCKS.pm';
 abstract_from 'lib/POE/Component/Client/SOCKS.pm';
 build_requires 'Test::More' => 0.47;
 license 'perl';
+requires 'warnings::compat' => 0 if $] < 5.006;
 requires 'Carp' => 0;
 requires 'Socket' => 0;
 requires 'POE' => 0.38;
+requires 'POE::Wheel::SocketFactory' => 0;
+requires 'POE::Filter::Stream' => 0;
+requires 'POE::Wheel::ReadWrite' => 0;
 WriteAll();

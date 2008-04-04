@@ -1,6 +1,9 @@
 POE::Component::Client::SOCKS
 =============================
 
+0.08	Fri Apr  4 14:35:11 BST 2008
+	- Kwalitee fixes.
+
 0.06	Wed Oct 31 17:22:55 GMT 2007
 	- Updated Module::Install to 0.68
 
