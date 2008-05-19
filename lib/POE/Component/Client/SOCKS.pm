@@ -7,7 +7,7 @@ use Socket;
 use POE qw(Wheel::SocketFactory Filter::Stream Wheel::ReadWrite);
 use vars qw($VERSION);
 
-$VERSION = '0.08';
+$VERSION = '0.10';
 
 sub spawn {
   my $package = shift;
@@ -591,6 +591,12 @@ If the SOCKS server rejected our request for some reason the following will exis
 =head1 AUTHOR
 
 Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+
+=head1 LICENSE
+
+Copyright C<(c)> Chris Williams.
+
+This program is free software; you can redistribute it and/or modify it under the same terms as Perl itself.
 
 =head1 SEE ALSO
 

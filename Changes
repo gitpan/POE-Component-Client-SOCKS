@@ -1,6 +1,10 @@
 POE::Component::Client::SOCKS
 =============================
 
+0.10	Mon May 19 17:31:37 BST 2008
+	- removed kwalitee test
+	- added license information
+
 0.08	Fri Apr  4 14:35:11 BST 2008
 	- Kwalitee fixes.
 
